@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>my first electron</title>
-</head>
-<body>
-  <h1>这是第一个electron应用！</h1>
-  <button>electron</button>
-</body>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>在窗口中嵌入Web页面</title>
+      <script src="event.js"></script>
+
+  </head>
+  <body>
+<button onclick="onClick_API()">webview API</button>
+<p/>
+   <iframe id="webview1" src="https://geekori.com" style="width:400px; height:300px"></iframe>
+  <p/>
+
+
+   <!--
+     <webview id="webview1" src="./other1.html" style="height:700px" autosize minwidth="600" ></webview>
+     <p/>
+     <webview id="webview2" src="./other2.html" style="height:700px" autosize minwidth="600" nodeintegration></webview>
+     -->
+  </body>
 </html>
